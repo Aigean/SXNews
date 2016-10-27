@@ -20,11 +20,12 @@
     AVCaptureSession *session;
     AVCaptureDeviceInput *deviceInput;
     
-#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_10_0
-    AVCapturePhotoOutput *imageOutput;
-#else
-    AVCaptureStillImageOutput *imageOutput;
-#endif
+//#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_10_0
+//    AVCapturePhotoOutput *imageOutput;
+//#else
+//    AVCaptureStillImageOutput *imageOutput;
+//#endif
+    id imageOutput;
     
     AVCaptureVideoPreviewLayer *previewLayer;
     

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "UIImageView+WebCache.h"
 
 @interface HomeViewController ()
 
@@ -22,12 +23,20 @@
     device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     deviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:device error:nil];
     
-    AVCapturePhotoSettings *setting = [[AVCapturePhotoSettings alloc] init];
-    [setting setFlashMode:AVCaptureFlashModeAuto];
+
     
 #if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_10_0
-    imageOutput = [[AVCapturePhotoOutput alloc] init];
-    [imageOutput setPhotoSettingsForSceneMonitoring:setting];
+    if ([AVCapturePhotoOutput class]) {
+        AVCapturePhotoSettings *setting = [[AVCapturePhotoSettings alloc] init];
+        [setting setFlashMode:AVCaptureFlashModeAuto];
+        imageOutput = [[AVCapturePhotoOutput alloc] init];
+        [imageOutput setPhotoSettingsForSceneMonitoring:setting];
+    } else {
+        imageOutput = [[AVCaptureStillImageOutput alloc] init];
+        NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys:AVVideoCodecJPEG,AVVideoCodecKey, nil];
+        [imageOutput setOutputSettings:outputSettings];
+    }
+
 #else
     imageOutput = [[AVCaptureStillImageOutput alloc] init];
     NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys:AVVideoCodecJPEG,AVVideoCodecKey, nil];
@@ -69,10 +78,27 @@
 -(IBAction)takePhotoButtonPressed:(UIButton *)button
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_10_0
-    AVCapturePhotoSettings *setting = [[AVCapturePhotoSettings alloc] init];
-    [setting setAutoStillImageStabilizationEnabled:YES];
-    [setting setFlashMode:AVCaptureFlashModeAuto];
-    [imageOutput capturePhotoWithSettings:setting delegate:self];
+    if ([AVCapturePhotoOutput class]) {
+        AVCapturePhotoSettings *setting = [[AVCapturePhotoSettings alloc] init];
+        [setting setAutoStillImageStabilizationEnabled:YES];
+        [setting setFlashMode:AVCaptureFlashModeAuto];
+        [imageOutput capturePhotoWithSettings:setting delegate:self];
+    } else {
+        AVCaptureConnection * videoConnection = [imageOutput connectionWithMediaType:AVMediaTypeVideo];
+        [imageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+            
+            UIImage *cut_image = [self cutImage:[UIImage imageWithData:imageData]];
+            
+            [preview_image_view setImage:cut_image];
+            [preview_image_view setUserInteractionEnabled:YES];
+            [preview_image_view setContentMode:UIViewContentModeScaleAspectFit];
+            
+            //上传图片
+            [self uploadImageFile:cut_image];
+        }];
+    }
+    
 #else
     AVCaptureConnection * videoConnection = [imageOutput connectionWithMediaType:AVMediaTypeVideo];
     [imageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
@@ -118,20 +144,24 @@
 -(void)uploadImageFile:(UIImage *)image
 {
     [[HttpRequest instance] postImage:image success:^(NSDictionary *result) {
-        if ([[[result valueForKey:@"data"] stringValue] isEqual:@"1"])
-        {
-            //播放1.mp4
-            [self startPlayVideo:@"video1"];
-        }
-        else if ([[[result valueForKey:@"data"] stringValue] isEqual:@"2"])
-        {
-            //播放2.mp4
-            [self startPlayVideo:@"video2"];
-        }
-        else
-        {
-            //播放图片
-            [self startPlayPhoto];
+        if ([[[result objectForKey:@"success"] stringValue] isEqualToString:@"1"]) {
+            // Success
+            NSDictionary *data = (NSDictionary *)[result objectForKey:@"data"];
+            NSString *type = (NSString *)[data objectForKey:@"type"];
+            
+            if ([type isEqualToString:@"video"]) {
+                // Play video
+//                NSString *videoURL = (NSString *)[data objectForKey:@"res"];
+                // TODO: Fake video url
+                NSString *videoURL = @"video1";
+                [self startPlayVideo:videoURL];
+            } else if ([type isEqualToString:@"pics"]) {
+                // Play pictures
+                NSArray *pictures = (NSArray *)[data objectForKey:@"res"];
+                [self startPlayPhoto:pictures];
+            } else {
+                NSLog(@"Server error");
+            }
         }
     } failed:^(NSString *error) {
         [self stopPlayingMenu];
@@ -161,7 +191,7 @@
     [video_player play];
 }
 
--(void)startPlayPhoto
+-(void)startPlayPhoto:(NSArray *)pictures
 {
     CGRect imageRect = CGRectMake(0, 0, ScreenWidth - 20, (ScreenWidth - 20) * 3.0 / 4.0);
     
@@ -181,7 +211,8 @@
     
     [cycleScrollView setFetchContentViewAtIndex:^UIView *(NSInteger index) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:imageRect];
-        [imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"icon0%ld", index + 1]]];
+        NSString *pictureURL = (NSString *)[pictures objectAtIndex:index];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:pictureURL]];
         [imageView setContentMode:UIViewContentModeScaleAspectFill];
         [imageView setClipsToBounds:YES];
         [imageView setBackgroundColor:[UIColor clearColor]];
@@ -194,7 +225,7 @@
     }];
     
     [cycleScrollView setTotalPagesCount:^NSInteger {
-        return 7;
+        return pictures.count;
     }];
     
     [player_view addSubview:cycleScrollView];
