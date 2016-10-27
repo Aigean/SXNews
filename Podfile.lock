@@ -21,6 +21,8 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - FDFullscreenPopGesture (1.1)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
   - MJExtension (2.0.4)
   - MJRefresh (3.1.9)
   - ReactiveCocoa (2.5):
@@ -33,26 +35,33 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - Toast (3.0)
   - UITableView+FDTemplateLayoutCell (1.4)
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
   - FDFullscreenPopGesture (= 1.1)
+  - Masonry
+  - MBProgressHUD
   - MJExtension (= 2.0.4)
   - MJRefresh (= 3.1.9)
   - ReactiveCocoa (= 2.5)
   - SDWebImage (= 3.7.5)
+  - Toast
   - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 90503779f5c2608b76b5b0f41efdb05c080d1976
   MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  Toast: 32c59229abfcf41850162b83bb9259dc84372473
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 41527270fc1a4a5b8bc994d93029cf3284afd0aa
+PODFILE CHECKSUM: 73112b3a7751c17718e2068f4307635da52be5ff
 
 COCOAPODS: 1.1.1

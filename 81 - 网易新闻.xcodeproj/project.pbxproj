@@ -73,6 +73,18 @@
 		1DE822B91C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822B71C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m */; };
 		1DE822BA1C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE822B81C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib */; };
 		1DE822C01C60577900E965C1 /* SXSimilarNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */; };
+		B018B4CE1DC1861C001C5B5D /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4B71DC1861C001C5B5D /* Common.m */; };
+		B018B4CF1DC1861C001C5B5D /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4BA1DC1861C001C5B5D /* HttpRequest.m */; };
+		B018B4D01DC1861C001C5B5D /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4BC1DC1861C001C5B5D /* LoadingView.m */; };
+		B018B4D11DC1861C001C5B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B018B4BF1DC1861C001C5B5D /* Assets.xcassets */; };
+		B018B4D21DC1861C001C5B5D /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B018B4C01DC1861C001C5B5D /* video1.mp4 */; };
+		B018B4D31DC1861C001C5B5D /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B018B4C11DC1861C001C5B5D /* video2.mp4 */; };
+		B018B4D41DC1861C001C5B5D /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4C51DC1861C001C5B5D /* CycleScrollView.m */; };
+		B018B4D51DC1861C001C5B5D /* KDCycleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4C71DC1861C001C5B5D /* KDCycleBannerView.m */; };
+		B018B4D61DC1861C001C5B5D /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4C91DC1861C001C5B5D /* NSTimer+Addition.m */; };
+		B018B4D71DC1861C001C5B5D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4CC1DC1861C001C5B5D /* HomeViewController.m */; };
+		B018B4D81DC1861C001C5B5D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B018B4CD1DC1861C001C5B5D /* HomeViewController.xib */; };
+		B018B4DC1DC187AB001C5B5D /* SXSmartReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4DB1DC187AB001C5B5D /* SXSmartReadViewController.m */; };
 		CBD816E7985259C47BAF2E35 /* libPods-81 - 网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F317121745CDB4ABEC2AB029 /* libPods-81 - 网易新闻.a */; };
 /* End PBXBuildFile section */
 
@@ -206,6 +218,28 @@
 		1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSimilarNewsEntity.m; sourceTree = "<group>"; };
 		43917CB03490BBBECA0C0407 /* Pods-81 - 网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		7DBEC9A37016D23B9495A1D3 /* Pods-81 - 网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.release.xcconfig"; sourceTree = "<group>"; };
+		B018B4B61DC1861C001C5B5D /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		B018B4B71DC1861C001C5B5D /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		B018B4B81DC1861C001C5B5D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B018B4B91DC1861C001C5B5D /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		B018B4BA1DC1861C001C5B5D /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		B018B4BB1DC1861C001C5B5D /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		B018B4BC1DC1861C001C5B5D /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		B018B4BD1DC1861C001C5B5D /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		B018B4BF1DC1861C001C5B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B018B4C01DC1861C001C5B5D /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		B018B4C11DC1861C001C5B5D /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		B018B4C41DC1861C001C5B5D /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
+		B018B4C51DC1861C001C5B5D /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
+		B018B4C61DC1861C001C5B5D /* KDCycleBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDCycleBannerView.h; sourceTree = "<group>"; };
+		B018B4C71DC1861C001C5B5D /* KDCycleBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDCycleBannerView.m; sourceTree = "<group>"; };
+		B018B4C81DC1861C001C5B5D /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		B018B4C91DC1861C001C5B5D /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		B018B4CB1DC1861C001C5B5D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B018B4CC1DC1861C001C5B5D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B018B4CD1DC1861C001C5B5D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B018B4DA1DC187AB001C5B5D /* SXSmartReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSmartReadViewController.h; sourceTree = "<group>"; };
+		B018B4DB1DC187AB001C5B5D /* SXSmartReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSmartReadViewController.m; sourceTree = "<group>"; };
 		F317121745CDB4ABEC2AB029 /* libPods-81 - 网易新闻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-81 - 网易新闻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -505,6 +539,7 @@
 				1D2A597E1A700864001F9B8E /* News */,
 				1D7DFD1A1CA0F3280084EC5B /* Reply */,
 				1D23576B1A80A4A2000C7AAC /* Main */,
+				B018B4B41DC185DE001C5B5D /* SmartRead */,
 				1D25EA371C8D69E4009AFE2E /* Tools */,
 				1D25EA4B1C8D69EE009AFE2E /* Other */,
 				1D2A590C1A700822001F9B8E /* AppDelegate.h */,
@@ -615,6 +650,83 @@
 			path = PhotoSet;
 			sourceTree = "<group>";
 		};
+		B018B4B41DC185DE001C5B5D /* SmartRead */ = {
+			isa = PBXGroup;
+			children = (
+				B018B4D91DC18785001C5B5D /* SmartReadController */,
+				B018B4B51DC1861C001C5B5D /* Common */,
+				B018B4BE1DC1861C001C5B5D /* Images */,
+				B018B4C21DC1861C001C5B5D /* OpenSource */,
+				B018B4CA1DC1861C001C5B5D /* ViewControllers */,
+			);
+			path = SmartRead;
+			sourceTree = "<group>";
+		};
+		B018B4B51DC1861C001C5B5D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B018B4B61DC1861C001C5B5D /* Common.h */,
+				B018B4B71DC1861C001C5B5D /* Common.m */,
+				B018B4B81DC1861C001C5B5D /* Constant.h */,
+				B018B4B91DC1861C001C5B5D /* HttpRequest.h */,
+				B018B4BA1DC1861C001C5B5D /* HttpRequest.m */,
+				B018B4BB1DC1861C001C5B5D /* LoadingView.h */,
+				B018B4BC1DC1861C001C5B5D /* LoadingView.m */,
+				B018B4BD1DC1861C001C5B5D /* Message.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B018B4BE1DC1861C001C5B5D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B018B4BF1DC1861C001C5B5D /* Assets.xcassets */,
+				B018B4C01DC1861C001C5B5D /* video1.mp4 */,
+				B018B4C11DC1861C001C5B5D /* video2.mp4 */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B018B4C21DC1861C001C5B5D /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				B018B4C31DC1861C001C5B5D /* CycleScrollView */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		B018B4C31DC1861C001C5B5D /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B018B4C41DC1861C001C5B5D /* CycleScrollView.h */,
+				B018B4C51DC1861C001C5B5D /* CycleScrollView.m */,
+				B018B4C61DC1861C001C5B5D /* KDCycleBannerView.h */,
+				B018B4C71DC1861C001C5B5D /* KDCycleBannerView.m */,
+				B018B4C81DC1861C001C5B5D /* NSTimer+Addition.h */,
+				B018B4C91DC1861C001C5B5D /* NSTimer+Addition.m */,
+			);
+			path = CycleScrollView;
+			sourceTree = "<group>";
+		};
+		B018B4CA1DC1861C001C5B5D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B018B4CB1DC1861C001C5B5D /* HomeViewController.h */,
+				B018B4CC1DC1861C001C5B5D /* HomeViewController.m */,
+				B018B4CD1DC1861C001C5B5D /* HomeViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B018B4D91DC18785001C5B5D /* SmartReadController */ = {
+			isa = PBXGroup;
+			children = (
+				B018B4DA1DC187AB001C5B5D /* SXSmartReadViewController.h */,
+				B018B4DB1DC187AB001C5B5D /* SXSmartReadViewController.m */,
+			);
+			path = SmartReadController;
+			sourceTree = "<group>";
+		};
 		B041D524F7ABE91B7A896278 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,14 +830,18 @@
 			files = (
 				1D2A59191A700822001F9B8E /* LaunchScreen.xib in Resources */,
 				1D1C4A3C1B7604C700CE3E01 /* SXWeatherDetailPage.xib in Resources */,
+				B018B4D31DC1861C001C5B5D /* video2.mp4 in Resources */,
 				1DE822AC1C5875CC00E965C1 /* SXSearchListCell.xib in Resources */,
+				B018B4D21DC1861C001C5B5D /* video1.mp4 in Resources */,
 				1D2A59161A700822001F9B8E /* Images.xcassets in Resources */,
+				B018B4D11DC1861C001C5B5D /* Assets.xcassets in Resources */,
 				1D58EED81A70C18000411E39 /* NewsURLs.plist in Resources */,
 				1D7B9F4F1B5E1EC000774BDA /* HYQiHei-50J.ttf in Resources */,
 				1DE822BA1C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib in Resources */,
 				1D2357761A80A4B2000C7AAC /* Main.storyboard in Resources */,
 				1D1C4A481B77259C00CE3E01 /* SXWeatherItemView.xib in Resources */,
 				1D25EA521C8D69EE009AFE2E /* SXDetails.css in Resources */,
+				B018B4D81DC1861C001C5B5D /* HomeViewController.xib in Resources */,
 				1D58EECA1A709AE600411E39 /* News.storyboard in Resources */,
 				1D007F3D1B6C824D00EA119C /* SXWeatherView.xib in Resources */,
 				1D7DFD271CA0F3280084EC5B /* SXReplyHeader.xib in Resources */,
@@ -795,11 +911,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D25EA531C8D69EE009AFE2E /* ViewController.m in Sources */,
+				B018B4CF1DC1861C001C5B5D /* HttpRequest.m in Sources */,
+				B018B4D61DC1861C001C5B5D /* NSTimer+Addition.m in Sources */,
 				1D25EA511C8D69EE009AFE2E /* MJExtensionConfig.m in Sources */,
 				1D7DFD281CA0F3280084EC5B /* SXReplyPage.m in Sources */,
 				1DE822C01C60577900E965C1 /* SXSimilarNewsEntity.m in Sources */,
 				1D007F601B6D17B200EA119C /* SXWeatherBgEntity.m in Sources */,
+				B018B4D51DC1861C001C5B5D /* KDCycleBannerView.m in Sources */,
 				1D6BE37B1A84B04600BF1AB7 /* SXNavController.m in Sources */,
+				B018B4DC1DC187AB001C5B5D /* SXSmartReadViewController.m in Sources */,
 				1D882E3C1A81151C004C9C9A /* SXPhotosDetailEntity.m in Sources */,
 				1D25EA6F1C8E7E33009AFE2E /* SXWeatherViewModel.m in Sources */,
 				1D58EED01A70A42100411E39 /* SXNewsTableViewPage.m in Sources */,
@@ -823,12 +943,15 @@
 				1D25EA491C8D69E4009AFE2E /* UILabel+Wonderful.m in Sources */,
 				1D577F471C57719F00B547B8 /* SXSearchPage.m in Sources */,
 				1D007F3B1B6C823500EA119C /* SXWeatherView.m in Sources */,
+				B018B4D41DC1861C001C5B5D /* CycleScrollView.m in Sources */,
 				1D1C4A3B1B7604C700CE3E01 /* SXWeatherDetailPage.m in Sources */,
 				1D2021201B5A572700F38C4C /* SXTabBar.m in Sources */,
+				B018B4CE1DC1861C001C5B5D /* Common.m in Sources */,
 				1D2357721A80A4A2000C7AAC /* SXMainViewController.m in Sources */,
 				1D882E561A811E1D004C9C9A /* SXPhotoSetPage.m in Sources */,
 				1D7DFD241CA0F3280084EC5B /* SXReplyCell.m in Sources */,
 				1D25EA721C8E7E4A009AFE2E /* SXNewsViewModel.m in Sources */,
+				B018B4D01DC1861C001C5B5D /* LoadingView.m in Sources */,
 				1D0AC82C1A73B8AE00EEF963 /* SXDetailImgEntity.m in Sources */,
 				1D20211E1B5A572700F38C4C /* SXBarButton.m in Sources */,
 				1D2357741A80A4A2000C7AAC /* SXTitleLable.m in Sources */,
@@ -840,6 +963,7 @@
 				1D25EA451C8D69E4009AFE2E /* NSString+Base64.m in Sources */,
 				1D25EA471C8D69E4009AFE2E /* SXHTTPManager.m in Sources */,
 				1D25EA461C8D69E4009AFE2E /* SXAdManager.m in Sources */,
+				B018B4D71DC1861C001C5B5D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

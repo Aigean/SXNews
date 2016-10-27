@@ -14,4 +14,7 @@ pod 'MJRefresh','3.1.9'
 pod 'SDWebImage','3.7.5'
 pod 'FDFullscreenPopGesture','1.1'
 pod 'UITableView+FDTemplateLayoutCell'
+pod 'MBProgressHUD'
+pod 'Masonry'
+pod 'Toast'
 end
