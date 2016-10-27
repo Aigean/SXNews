@@ -42,7 +42,6 @@
 		1D2A590B1A700822001F9B8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A590A1A700822001F9B8E /* main.m */; };
 		1D2A590E1A700822001F9B8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A590D1A700822001F9B8E /* AppDelegate.m */; };
 		1D2A59161A700822001F9B8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A59151A700822001F9B8E /* Images.xcassets */; };
-		1D2A59191A700822001F9B8E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A59171A700822001F9B8E /* LaunchScreen.xib */; };
 		1D2A59251A700822001F9B8E /* _1_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A59241A700822001F9B8E /* _1_______Tests.m */; };
 		1D577F471C57719F00B547B8 /* SXSearchPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D577F461C57719F00B547B8 /* SXSearchPage.m */; };
 		1D58EEC81A70924A00411E39 /* SXNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58EEC71A70924A00411E39 /* SXNewsEntity.m */; };
@@ -73,6 +72,7 @@
 		1DE822B91C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822B71C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m */; };
 		1DE822BA1C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE822B81C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib */; };
 		1DE822C01C60577900E965C1 /* SXSimilarNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */; };
+		B0142CB41DC22EE5000188B9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0142CB31DC22EE5000188B9 /* Launch Screen.storyboard */; };
 		B018B4CE1DC1861C001C5B5D /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4B71DC1861C001C5B5D /* Common.m */; };
 		B018B4CF1DC1861C001C5B5D /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4BA1DC1861C001C5B5D /* HttpRequest.m */; };
 		B018B4D01DC1861C001C5B5D /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4BC1DC1861C001C5B5D /* LoadingView.m */; };
@@ -165,7 +165,6 @@
 		1D2A590C1A700822001F9B8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D2A590D1A700822001F9B8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D2A59151A700822001F9B8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
-		1D2A59181A700822001F9B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1D2A591E1A700822001F9B8E /* 81 - 网易新闻Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "81 - 网易新闻Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2A59231A700822001F9B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D2A59241A700822001F9B8E /* _1_______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_1_______Tests.m"; sourceTree = "<group>"; };
@@ -218,6 +217,7 @@
 		1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSimilarNewsEntity.m; sourceTree = "<group>"; };
 		43917CB03490BBBECA0C0407 /* Pods-81 - 网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		7DBEC9A37016D23B9495A1D3 /* Pods-81 - 网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.release.xcconfig"; sourceTree = "<group>"; };
+		B0142CB31DC22EE5000188B9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B018B4B61DC1861C001C5B5D /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		B018B4B71DC1861C001C5B5D /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		B018B4B81DC1861C001C5B5D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -292,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				1D2357751A80A4B2000C7AAC /* Main.storyboard */,
+				B0142CB31DC22EE5000188B9 /* Launch Screen.storyboard */,
 				1D20211A1B5A572700F38C4C /* SXMainTabBarController.h */,
 				1D20211B1B5A572700F38C4C /* SXMainTabBarController.m */,
 				1D23576C1A80A4A2000C7AAC /* SXMainViewController.h */,
@@ -332,7 +333,6 @@
 			isa = PBXGroup;
 			children = (
 				1D2A59151A700822001F9B8E /* Images.xcassets */,
-				1D2A59171A700822001F9B8E /* LaunchScreen.xib */,
 				1D25EA4C1C8D69EE009AFE2E /* MJExtensionConfig.h */,
 				1D25EA4D1C8D69EE009AFE2E /* MJExtensionConfig.m */,
 				1D25EA4E1C8D69EE009AFE2E /* SXDetails.css */,
@@ -830,9 +830,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D2A59191A700822001F9B8E /* LaunchScreen.xib in Resources */,
 				1D1C4A3C1B7604C700CE3E01 /* SXWeatherDetailPage.xib in Resources */,
 				B018B4D31DC1861C001C5B5D /* video2.mp4 in Resources */,
+				B0142CB41DC22EE5000188B9 /* Launch Screen.storyboard in Resources */,
 				1DE822AC1C5875CC00E965C1 /* SXSearchListCell.xib in Resources */,
 				B018B4D21DC1861C001C5B5D /* video1.mp4 in Resources */,
 				1D2A59161A700822001F9B8E /* Images.xcassets in Resources */,
@@ -987,18 +987,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		1D2A59171A700822001F9B8E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D2A59181A700822001F9B8E /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		1D2A59261A700822001F9B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1081,7 +1069,6 @@
 			baseConfigurationReference = 43917CB03490BBBECA0C0407 /* Pods-81 - 网易新闻.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (P4XREMZX86)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1105,7 +1092,6 @@
 			baseConfigurationReference = 7DBEC9A37016D23B9495A1D3 /* Pods-81 - 网易新闻.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (P4XREMZX86)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
