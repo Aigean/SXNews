@@ -254,6 +254,8 @@
     [corner3 setHidden:YES];
     [corner4 setHidden:YES];
     [player_view setBackgroundColor:[UIColor blackColor]];
+    // Also black coverview
+    [cover_view setBackgroundColor:[UIColor blackColor]];
 }
 
 -(void)stopPlayingMenu
@@ -267,6 +269,8 @@
     [corner4 setHidden:NO];
     
     [player_view setBackgroundColor:[UIColor clearColor]];
+    // Also clear coverview's background color
+    [cover_view setBackgroundColor:[UIColor clearColor]];
     
     [video_player pause];
     [video_player.currentItem cancelPendingSeeks];
