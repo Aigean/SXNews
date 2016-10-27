@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="Fb3-j1-el5" customClass="SXNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="新闻" image="tabbar_icon_news_normal" selectedImage="tabbar_icon_news_highlight" id="zIR-RP-tBz"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3DF-eT-EV2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3DF-eT-EV2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,7 +45,7 @@
                     <connections>
                         <segue destination="Fb3-j1-el5" kind="relationship" relationship="viewControllers" id="3c2-rv-aVg"/>
                         <segue destination="QUT-lh-x6l" kind="relationship" relationship="viewControllers" id="pQP-vu-clK"/>
-                        <segue destination="rUr-6w-qch" kind="relationship" relationship="viewControllers" id="Eag-dT-B1b"/>
+                        <segue destination="Rht-Ws-2iI" kind="relationship" relationship="viewControllers" id="Eag-dT-B1b"/>
                         <segue destination="TY2-ry-KrA" kind="relationship" relationship="viewControllers" id="bR0-lU-srk"/>
                         <segue destination="mlZ-K8-TSP" kind="relationship" relationship="viewControllers" id="ilr-7K-r9p"/>
                     </connections>
@@ -226,7 +226,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lJ-Au-kJO">
-                                        <rect key="frame" x="15" y="189" width="290" height="1"/>
+                                        <rect key="frame" x="15" y="188" width="290" height="1"/>
                                         <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="vSq-wt-hh0"/>
@@ -239,7 +239,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-ib-0CO">
-                                        <rect key="frame" x="15" y="190" width="290" height="294"/>
+                                        <rect key="frame" x="15" y="189" width="290" height="295"/>
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </scrollView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="王健林唱摇滚受捧，思聪赶快签约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6l-Kr-572">
@@ -300,37 +300,41 @@
             </objects>
             <point key="canvasLocation" x="748" y="-5"/>
         </scene>
-        <!--直播-->
+        <!--Live View Controller-->
         <scene sceneID="ZRe-46-9Rb">
             <objects>
-                <viewController id="rUr-6w-qch" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p0b-Ms-sDy"/>
-                        <viewControllerLayoutGuide type="bottom" id="mMk-cc-CvV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="elS-KV-vqI">
+                <viewController storyboardIdentifier="SXLiveViewController" id="rUr-6w-qch" customClass="SXLiveViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="DgG-gr-WeK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="121" translatesAutoresizingMaskIntoConstraints="NO" id="F23-8g-oXg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="618"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="618" id="Y40-5t-Hvn"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="F23-8g-oXg" firstAttribute="top" secondItem="elS-KV-vqI" secondAttribute="top" id="DAG-Ja-7fR"/>
-                            <constraint firstAttribute="trailing" secondItem="F23-8g-oXg" secondAttribute="trailing" id="Ykf-pa-UOu"/>
-                            <constraint firstItem="F23-8g-oXg" firstAttribute="leading" secondItem="elS-KV-vqI" secondAttribute="leading" id="muW-aV-ec7"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="直播" image="tabbar_icon_media_normal" selectedImage="tabbar_icon_media_highlight" id="GFm-0s-Do9"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nyf-Ig-L6F">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kLiveCellIdentifier" id="cxg-ED-8CX">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="DMb-1g-y85">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="liveCollectionView" destination="DgG-gr-WeK" id="dLR-Pd-a4I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gu3-LC-9gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="748"/>
+            <point key="canvasLocation" x="-15" y="1530"/>
         </scene>
         <!--发现-->
         <scene sceneID="p2q-Or-egg">
@@ -362,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFO-dl-Tu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="731.5" y="742.5"/>
+            <point key="canvasLocation" x="-15" y="742"/>
         </scene>
         <!--我-->
         <scene sceneID="fox-zc-9gN">
@@ -394,11 +398,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOd-cO-ntx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="742"/>
+            <point key="canvasLocation" x="746" y="742"/>
+        </scene>
+        <!--直播-->
+        <scene sceneID="Lrx-1h-7Wi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rht-Ws-2iI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="直播" image="tabbar_icon_media_normal" selectedImage="tabbar_icon_media_highlight" id="GFm-0s-Do9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="N12-Sl-Wx1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rUr-6w-qch" kind="relationship" relationship="rootViewController" id="oVZ-Ov-nLa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epC-ai-V4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="1530"/>
         </scene>
     </scenes>
     <resources>
-        <image name="121" width="375" height="618"/>
         <image name="122" width="375" height="617"/>
         <image name="124" width="375" height="617"/>
         <image name="searchBar_background" width="29" height="29"/>

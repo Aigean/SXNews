@@ -72,6 +72,9 @@
 		1DE822B91C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822B71C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m */; };
 		1DE822BA1C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE822B81C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib */; };
 		1DE822C01C60577900E965C1 /* SXSimilarNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */; };
+		B00666CA1DC23AE2002B901B /* SXLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00666C91DC23AE2002B901B /* SXLiveViewController.m */; };
+		B00666D31DC24117002B901B /* SXLiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B00666D11DC24117002B901B /* SXLiveCollectionViewCell.m */; };
+		B00666D41DC24117002B901B /* SXLiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00666D21DC24117002B901B /* SXLiveCollectionViewCell.xib */; };
 		B0142CB41DC22EE5000188B9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0142CB31DC22EE5000188B9 /* Launch Screen.storyboard */; };
 		B018B4CE1DC1861C001C5B5D /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4B71DC1861C001C5B5D /* Common.m */; };
 		B018B4CF1DC1861C001C5B5D /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B018B4BA1DC1861C001C5B5D /* HttpRequest.m */; };
@@ -217,6 +220,11 @@
 		1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSimilarNewsEntity.m; sourceTree = "<group>"; };
 		43917CB03490BBBECA0C0407 /* Pods-81 - 网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		7DBEC9A37016D23B9495A1D3 /* Pods-81 - 网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.release.xcconfig"; sourceTree = "<group>"; };
+		B00666C81DC23AE2002B901B /* SXLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXLiveViewController.h; sourceTree = "<group>"; };
+		B00666C91DC23AE2002B901B /* SXLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXLiveViewController.m; sourceTree = "<group>"; };
+		B00666D01DC24117002B901B /* SXLiveCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXLiveCollectionViewCell.h; sourceTree = "<group>"; };
+		B00666D11DC24117002B901B /* SXLiveCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXLiveCollectionViewCell.m; sourceTree = "<group>"; };
+		B00666D21DC24117002B901B /* SXLiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXLiveCollectionViewCell.xib; sourceTree = "<group>"; };
 		B0142CB31DC22EE5000188B9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B018B4B61DC1861C001C5B5D /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		B018B4B71DC1861C001C5B5D /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
@@ -538,6 +546,7 @@
 				1D007F381B6C820400EA119C /* Weather */,
 				1D2A597E1A700864001F9B8E /* News */,
 				1D7DFD1A1CA0F3280084EC5B /* Reply */,
+				B00666C71DC23ACA002B901B /* Live */,
 				1D23576B1A80A4A2000C7AAC /* Main */,
 				B018B4B41DC185DE001C5B5D /* SmartRead */,
 				1D25EA371C8D69E4009AFE2E /* Tools */,
@@ -648,6 +657,18 @@
 				1D25EA5B1C8D89F1009AFE2E /* ViewModel */,
 			);
 			path = PhotoSet;
+			sourceTree = "<group>";
+		};
+		B00666C71DC23ACA002B901B /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				B00666C81DC23AE2002B901B /* SXLiveViewController.h */,
+				B00666C91DC23AE2002B901B /* SXLiveViewController.m */,
+				B00666D01DC24117002B901B /* SXLiveCollectionViewCell.h */,
+				B00666D11DC24117002B901B /* SXLiveCollectionViewCell.m */,
+				B00666D21DC24117002B901B /* SXLiveCollectionViewCell.xib */,
+			);
+			path = Live;
 			sourceTree = "<group>";
 		};
 		B018B4B41DC185DE001C5B5D /* SmartRead */ = {
@@ -831,6 +852,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D1C4A3C1B7604C700CE3E01 /* SXWeatherDetailPage.xib in Resources */,
+				B00666D41DC24117002B901B /* SXLiveCollectionViewCell.xib in Resources */,
 				B018B4D31DC1861C001C5B5D /* video2.mp4 in Resources */,
 				B0142CB41DC22EE5000188B9 /* Launch Screen.storyboard in Resources */,
 				1DE822AC1C5875CC00E965C1 /* SXSearchListCell.xib in Resources */,
@@ -935,6 +957,7 @@
 				1D0AC8321A73C66200EEF963 /* SXDetailPage.m in Sources */,
 				1D1C4A461B77257300CE3E01 /* SXWeatherItemView.m in Sources */,
 				1D007F5D1B6D155B00EA119C /* SXWeatherDetailEntity.m in Sources */,
+				B00666D31DC24117002B901B /* SXLiveCollectionViewCell.m in Sources */,
 				1D58EEC81A70924A00411E39 /* SXNewsEntity.m in Sources */,
 				1D25EA481C8D69E4009AFE2E /* SXNetworkTools.m in Sources */,
 				1D25EA661C8E7DB4009AFE2E /* SXSearchViewModel.m in Sources */,
@@ -966,6 +989,7 @@
 				1D25EA471C8D69E4009AFE2E /* SXHTTPManager.m in Sources */,
 				1D25EA461C8D69E4009AFE2E /* SXAdManager.m in Sources */,
 				B018B4D71DC1861C001C5B5D /* HomeViewController.m in Sources */,
+				B00666CA1DC23AE2002B901B /* SXLiveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
