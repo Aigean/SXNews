@@ -151,9 +151,7 @@
             
             if ([type isEqualToString:@"video"]) {
                 // Play video
-//                NSString *videoURL = (NSString *)[data objectForKey:@"res"];
-                // TODO: Fake video url
-                NSString *videoURL = @"video1";
+                NSString *videoURL = (NSString *)[data objectForKey:@"res"];
                 [self startPlayVideo:videoURL];
             } else if ([type isEqualToString:@"pics"]) {
                 // Play pictures
@@ -178,7 +176,7 @@
     [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     CGRect playerFrame = CGRectMake(0, 0, player_view.bounds.size.width, player_view.bounds.size.height);
-    AVURLAsset *asset = [AVURLAsset assetWithURL:[[NSBundle mainBundle] URLForResource:videoName withExtension:@"mp4"]];
+    AVURLAsset *asset = [AVURLAsset assetWithURL:[NSURL URLWithString:videoName]];
     
     video_player_Item = [AVPlayerItem playerItemWithAsset:asset];
     video_player = [[AVPlayer alloc] initWithPlayerItem:video_player_Item];
