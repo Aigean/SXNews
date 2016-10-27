@@ -98,9 +98,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoview_image_default_white" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-rs-oEW">
-                                <rect key="frame" x="0.0" y="249" width="320" height="70"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Wy-Sw-c0j">
                                 <rect key="frame" x="0.0" y="64" width="320" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -115,14 +112,12 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1Wy-Sw-c0j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1Wq-4D-sxd"/>
-                            <constraint firstAttribute="centerY" secondItem="TqL-rs-oEW" secondAttribute="centerY" id="3vN-4y-4PM"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0lu-Rp-afC" secondAttribute="bottom" id="5ri-0r-7MO"/>
                             <constraint firstAttribute="trailing" secondItem="1Wy-Sw-c0j" secondAttribute="trailing" id="6jN-aY-ji1"/>
                             <constraint firstItem="0lu-Rp-afC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="HEt-Bl-JJl"/>
                             <constraint firstAttribute="trailing" secondItem="0lu-Rp-afC" secondAttribute="trailing" id="IbT-LA-WHf"/>
                             <constraint firstItem="1Wy-Sw-c0j" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="JYE-d6-EaV"/>
                             <constraint firstItem="0lu-Rp-afC" firstAttribute="top" secondItem="1Wy-Sw-c0j" secondAttribute="bottom" id="bVf-XX-MqJ"/>
-                            <constraint firstAttribute="centerX" secondItem="TqL-rs-oEW" secondAttribute="centerX" id="uuV-Bb-Ije"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7HA-Qb-Akk">
@@ -137,16 +132,14 @@
                             <rect key="frame" x="135" y="11" width="50" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11111" translatesAutoresizingMaskIntoConstraints="NO" id="F5C-Lj-Tfl">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="23"/>
-                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="智读" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXl-s6-Kuz">
+                                    <rect key="frame" x="8" y="0.0" width="42" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="F5C-Lj-Tfl" secondAttribute="bottom" id="3CT-B4-J2c"/>
-                                <constraint firstItem="F5C-Lj-Tfl" firstAttribute="leading" secondItem="kYI-wd-bEY" secondAttribute="leading" id="MAi-9f-mTJ"/>
-                                <constraint firstAttribute="trailing" secondItem="F5C-Lj-Tfl" secondAttribute="trailing" id="Vuq-aA-YMI"/>
-                                <constraint firstItem="F5C-Lj-Tfl" firstAttribute="top" secondItem="kYI-wd-bEY" secondAttribute="top" id="iI5-kU-e03"/>
-                            </constraints>
                         </view>
                     </navigationItem>
                     <connections>
@@ -415,12 +408,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="11111" width="70" height="33"/>
         <image name="121" width="375" height="618"/>
         <image name="122" width="375" height="617"/>
         <image name="124" width="375" height="617"/>
         <image name="125" width="375" height="618"/>
-        <image name="photoview_image_default_white" width="320" height="70"/>
         <image name="searchBar_background" width="29" height="29"/>
         <image name="search_icon" width="24" height="24"/>
         <image name="tabbar_icon_found_highlight" width="16" height="21"/>
