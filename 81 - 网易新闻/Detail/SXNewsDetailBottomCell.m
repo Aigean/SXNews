@@ -92,7 +92,7 @@
 - (void)setSameNewsEntity:(SXSimilarNewsEntity *)sameNewsEntity
 {
     _sameNewsEntity = sameNewsEntity;
-    [self.newsIcon sd_setImageWithURL:[NSURL URLWithString:sameNewsEntity.imgsrc] placeholderImage:[UIImage imageNamed:@"303"]];
+    [self.newsIcon sd_setImageWithURL:[NSURL URLWithString:sameNewsEntity.imgsrc] placeholderImage:[UIImage new]];
     self.newsIcon.layer.cornerRadius = 2;
     self.newsIcon.layer.masksToBounds = YES;
     self.newsIcon.layer.shouldRasterize = YES;

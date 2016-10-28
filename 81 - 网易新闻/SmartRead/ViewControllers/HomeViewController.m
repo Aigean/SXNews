@@ -90,10 +90,6 @@
             
             UIImage *cut_image = [self cutImage:[UIImage imageWithData:imageData]];
             
-            [preview_image_view setImage:cut_image];
-            [preview_image_view setUserInteractionEnabled:YES];
-            [preview_image_view setContentMode:UIViewContentModeScaleAspectFit];
-            
             //上传图片
             [self uploadImageFile:cut_image];
         }];
@@ -105,10 +101,6 @@
         NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
         
         UIImage *cut_image = [self cutImage:[UIImage imageWithData:imageData]];
-        
-        [preview_image_view setImage:cut_image];
-        [preview_image_view setUserInteractionEnabled:YES];
-        [preview_image_view setContentMode:UIViewContentModeScaleAspectFit];
         
         //上传图片
         [self uploadImageFile:cut_image];
@@ -122,10 +114,6 @@
     
     UIImage *cut_image = [self cutImage:[UIImage imageWithData:imageData]];
     //UIImageWriteToSavedPhotosAlbum(cut_image, self, nil, NULL);
-    
-    [preview_image_view setImage:cut_image];
-    [preview_image_view setUserInteractionEnabled:YES];
-    [preview_image_view setContentMode:UIViewContentModeScaleAspectFit];
     
     //上传图片
     [self uploadImageFile:cut_image];

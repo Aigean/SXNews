@@ -40,7 +40,6 @@
     IBOutlet UIView *cover_view;
     IBOutlet UIView *player_view;
     IBOutlet UIView *bottom_button_view;
-    IBOutlet UIImageView *preview_image_view;
     
     IBOutlet UIImageView *corner1;
     IBOutlet UIImageView *corner2;

@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="Fb3-j1-el5" customClass="SXNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="新闻" image="tabbar_icon_news_normal" selectedImage="tabbar_icon_news_highlight" id="zIR-RP-tBz"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3DF-eT-EV2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3DF-eT-EV2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,7 +46,7 @@
                         <segue destination="Fb3-j1-el5" kind="relationship" relationship="viewControllers" id="3c2-rv-aVg"/>
                         <segue destination="QUT-lh-x6l" kind="relationship" relationship="viewControllers" id="pQP-vu-clK"/>
                         <segue destination="Rht-Ws-2iI" kind="relationship" relationship="viewControllers" id="Eag-dT-B1b"/>
-                        <segue destination="TY2-ry-KrA" kind="relationship" relationship="viewControllers" id="bR0-lU-srk"/>
+                        <segue destination="j7j-vZ-mCb" kind="relationship" relationship="viewControllers" id="bR0-lU-srk"/>
                         <segue destination="mlZ-K8-TSP" kind="relationship" relationship="viewControllers" id="ilr-7K-r9p"/>
                     </connections>
                 </tabBarController>
@@ -226,7 +226,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lJ-Au-kJO">
-                                        <rect key="frame" x="15" y="189" width="290" height="1"/>
+                                        <rect key="frame" x="15" y="188" width="290" height="1"/>
                                         <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="vSq-wt-hh0"/>
@@ -239,7 +239,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-ib-0CO">
-                                        <rect key="frame" x="15" y="190" width="290" height="294"/>
+                                        <rect key="frame" x="15" y="189" width="290" height="295"/>
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </scrollView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="王健林唱摇滚受捧，思聪赶快签约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6l-Kr-572">
@@ -353,7 +353,7 @@
             </objects>
             <point key="canvasLocation" x="-15" y="1530"/>
         </scene>
-        <!--发现-->
+        <!--View Controller-->
         <scene sceneID="p2q-Or-egg">
             <objects>
                 <viewController id="TY2-ry-KrA" sceneMemberID="viewController">
@@ -364,26 +364,32 @@
                     <view key="view" contentMode="scaleToFill" id="pCK-hU-Mym">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="122" translatesAutoresizingMaskIntoConstraints="NO" id="3fO-S6-fKc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="618"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="618" id="feb-av-EmO"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3fO-S6-fKc" secondAttribute="trailing" id="CAO-id-dhW"/>
-                            <constraint firstItem="3fO-S6-fKc" firstAttribute="leading" secondItem="pCK-hU-Mym" secondAttribute="leading" id="RoD-9H-sHM"/>
-                            <constraint firstItem="3fO-S6-fKc" firstAttribute="top" secondItem="pCK-hU-Mym" secondAttribute="top" id="mHB-3R-gUz"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="发现" image="tabbar_icon_found_normal" selectedImage="tabbar_icon_found_highlight" id="TDE-Zx-14f"/>
+                    <navigationItem key="navigationItem" id="Ise-w4-FBr">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="c5E-ZK-MFV">
+                            <rect key="frame" x="96" y="6" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-Uz-LP1">
+                                    <rect key="frame" x="47" y="6" width="35" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="u8b-Uz-LP1" firstAttribute="centerX" secondItem="c5E-ZK-MFV" secondAttribute="centerX" id="2SQ-mM-AJd"/>
+                                <constraint firstItem="u8b-Uz-LP1" firstAttribute="centerY" secondItem="c5E-ZK-MFV" secondAttribute="centerY" id="Jwy-kE-6pz"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFO-dl-Tu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="742"/>
+            <point key="canvasLocation" x="-15" y="2515"/>
         </scene>
         <!--我-->
         <scene sceneID="fox-zc-9gN">
@@ -423,7 +429,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rht-Ws-2iI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="直播" image="tabbar_icon_media_normal" selectedImage="tabbar_icon_media_highlight" id="GFm-0s-Do9"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N12-Sl-Wx1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="N12-Sl-Wx1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -437,9 +443,28 @@
             </objects>
             <point key="canvasLocation" x="-759" y="1530"/>
         </scene>
+        <!--发现-->
+        <scene sceneID="1bX-fz-pXd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j7j-vZ-mCb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="tabbar_icon_found_normal" selectedImage="tabbar_icon_found_highlight" id="TDE-Zx-14f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bKp-gk-V3W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TY2-ry-KrA" kind="relationship" relationship="rootViewController" id="EuW-Qg-BOG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jG5-br-faQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759.375" y="2515.1408450704225"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="122" width="375" height="617"/>
         <image name="124" width="375" height="617"/>
         <image name="searchBar_background" width="29" height="29"/>
         <image name="search_icon" width="24" height="24"/>
