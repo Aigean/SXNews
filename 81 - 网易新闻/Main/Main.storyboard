@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="Fb3-j1-el5" customClass="SXNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="新闻" image="tabbar_icon_news_normal" selectedImage="tabbar_icon_news_highlight" id="zIR-RP-tBz"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3DF-eT-EV2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3DF-eT-EV2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -120,7 +120,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无锡观察智读版" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXl-s6-Kuz">
-                                    <rect key="frame" x="45.5" y="1" width="121.5" height="21"/>
+                                    <rect key="frame" x="45" y="1" width="122" height="21"/>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
@@ -226,7 +226,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lJ-Au-kJO">
-                                        <rect key="frame" x="15" y="188" width="290" height="1"/>
+                                        <rect key="frame" x="15" y="189" width="290" height="1"/>
                                         <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="vSq-wt-hh0"/>
@@ -239,7 +239,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-ib-0CO">
-                                        <rect key="frame" x="15" y="189" width="290" height="295"/>
+                                        <rect key="frame" x="15" y="190" width="290" height="294"/>
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </scrollView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="王健林唱摇滚受捧，思聪赶快签约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6l-Kr-572">
@@ -332,7 +332,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W18-XZ-l82">
-                                    <rect key="frame" x="29.5" y="6" width="69.5" height="21"/>
+                                    <rect key="frame" x="29" y="6" width="70" height="21"/>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
@@ -417,7 +417,7 @@
                             <constraint firstAttribute="trailing" secondItem="alj-pq-5nS" secondAttribute="trailing" id="pj1-XV-fwK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" image="tabbar_icon_me_normal" selectedImage="tabbar_icon_me_highlight" id="402-M4-EoP"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="我" image="tabbar_icon_me_normal" selectedImage="tabbar_icon_me_highlight" id="402-M4-EoP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOd-cO-ntx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -427,9 +427,9 @@
         <scene sceneID="Lrx-1h-7Wi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rht-Ws-2iI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="直播" image="tabbar_icon_media_normal" selectedImage="tabbar_icon_media_highlight" id="GFm-0s-Do9"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="直播" image="tabbar_icon_media_normal" selectedImage="tabbar_icon_media_highlight" id="GFm-0s-Do9"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="N12-Sl-Wx1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N12-Sl-Wx1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -447,9 +447,9 @@
         <scene sceneID="1bX-fz-pXd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j7j-vZ-mCb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" image="tabbar_icon_found_normal" selectedImage="tabbar_icon_found_highlight" id="TDE-Zx-14f"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="发现" image="tabbar_icon_found_normal" selectedImage="tabbar_icon_found_highlight" id="TDE-Zx-14f"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bKp-gk-V3W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bKp-gk-V3W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
