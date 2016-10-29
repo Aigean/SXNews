@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view.
     
     self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+    self.webView.scalesPageToFit = YES;
     NSURL *webURL = [NSURL URLWithString:self.url];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:webURL];
     [self.webView loadRequest:request];
