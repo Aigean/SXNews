@@ -72,6 +72,7 @@
 		1DE822B91C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822B71C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m */; };
 		1DE822BA1C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE822B81C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib */; };
 		1DE822C01C60577900E965C1 /* SXSimilarNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */; };
+		8D32F4A51DC448DD008D9E38 /* SXWXNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32F4A41DC448DD008D9E38 /* SXWXNewsViewController.m */; };
 		B00666CA1DC23AE2002B901B /* SXLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00666C91DC23AE2002B901B /* SXLiveViewController.m */; };
 		B00666D31DC24117002B901B /* SXLiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B00666D11DC24117002B901B /* SXLiveCollectionViewCell.m */; };
 		B00666D41DC24117002B901B /* SXLiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00666D21DC24117002B901B /* SXLiveCollectionViewCell.xib */; };
@@ -220,6 +221,8 @@
 		1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSimilarNewsEntity.m; sourceTree = "<group>"; };
 		43917CB03490BBBECA0C0407 /* Pods-81 - 网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		7DBEC9A37016D23B9495A1D3 /* Pods-81 - 网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.release.xcconfig"; sourceTree = "<group>"; };
+		8D32F4A31DC448DD008D9E38 /* SXWXNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXWXNewsViewController.h; sourceTree = "<group>"; };
+		8D32F4A41DC448DD008D9E38 /* SXWXNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXWXNewsViewController.m; sourceTree = "<group>"; };
 		B00666C81DC23AE2002B901B /* SXLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXLiveViewController.h; sourceTree = "<group>"; };
 		B00666C91DC23AE2002B901B /* SXLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXLiveViewController.m; sourceTree = "<group>"; };
 		B00666D01DC24117002B901B /* SXLiveCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXLiveCollectionViewCell.h; sourceTree = "<group>"; };
@@ -545,6 +548,7 @@
 				1D882E361A8112ED004C9C9A /* PhotoSet */,
 				1D007F381B6C820400EA119C /* Weather */,
 				1D2A597E1A700864001F9B8E /* News */,
+				8D32F4A21DC448A2008D9E38 /* WXNews */,
 				1D7DFD1A1CA0F3280084EC5B /* Reply */,
 				B00666C71DC23ACA002B901B /* Live */,
 				1D23576B1A80A4A2000C7AAC /* Main */,
@@ -657,6 +661,16 @@
 				1D25EA5B1C8D89F1009AFE2E /* ViewModel */,
 			);
 			path = PhotoSet;
+			sourceTree = "<group>";
+		};
+		8D32F4A21DC448A2008D9E38 /* WXNews */ = {
+			isa = PBXGroup;
+			children = (
+				8D32F4A31DC448DD008D9E38 /* SXWXNewsViewController.h */,
+				8D32F4A41DC448DD008D9E38 /* SXWXNewsViewController.m */,
+			);
+			name = WXNews;
+			path = Live/WXNews;
 			sourceTree = "<group>";
 		};
 		B00666C71DC23ACA002B901B /* Live */ = {
@@ -958,6 +972,7 @@
 				1D1C4A461B77257300CE3E01 /* SXWeatherItemView.m in Sources */,
 				1D007F5D1B6D155B00EA119C /* SXWeatherDetailEntity.m in Sources */,
 				B00666D31DC24117002B901B /* SXLiveCollectionViewCell.m in Sources */,
+				8D32F4A51DC448DD008D9E38 /* SXWXNewsViewController.m in Sources */,
 				1D58EEC81A70924A00411E39 /* SXNewsEntity.m in Sources */,
 				1D25EA481C8D69E4009AFE2E /* SXNetworkTools.m in Sources */,
 				1D25EA661C8E7DB4009AFE2E /* SXSearchViewModel.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "UIImageView+WebCache.h"
+#import "SXWXNewsViewController.h"
 
 @interface HomeViewController ()
 
@@ -145,7 +146,16 @@
                 // Play pictures
                 NSArray *pictures = (NSArray *)[data objectForKey:@"res"];
                 [self startPlayPhoto:pictures];
-            } else {
+            } else if([type isEqualToString:@"news"]){
+                NSDictionary *dict = (NSDictionary *)[data objectForKey:@"res"];
+                NSString *newsURL = (NSString *)[dict objectForKey:@"url"];
+                SXWXNewsViewController *newsViewController = [[SXWXNewsViewController alloc] init];
+                newsViewController.url = newsURL;
+                UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:newsViewController];
+                
+                [self presentViewController:nav animated:YES completion:nil];
+            }
+            else {
                 NSLog(@"Server error");
             }
         }
