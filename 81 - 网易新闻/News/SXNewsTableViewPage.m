@@ -46,6 +46,7 @@
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(welcome) name:@"SXAdvertisementKey" object:nil];
 //    self.tableView.headerHidden = NO;
+    [self loadData];
 }
 
 - (BOOL)prefersStatusBarHidden
